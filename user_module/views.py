@@ -2,11 +2,11 @@ from rest_framework import status
 from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
-from .serializers import (RegistrationSerializer,
-                          UserLoginSerializer,
-                          ForgotPasswordSerializer,
-                          ResetPasswordSerializer,
-                          LogoutSerializer)
+from .serializer import (RegistrationSerializer,
+                         UserLoginSerializer,
+                         ForgotPasswordSerializer,
+                         ResetPasswordSerializer,
+                         LogoutSerializer)
 
 
 class Registration(generics.CreateAPIView):
